@@ -1,0 +1,66 @@
+<!--Practice Question-->
+<!--Create a search option that redirects its search request to Google-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect to Google</title>
+    <link rel="stylesheet" href="C:\Users\theca\OneDrive\Documents\MERNstack\frontend\2_CSS\style.css"/>
+</head>
+
+<body>
+    <header>
+        <h1><i>Redirects to Google<i></h1>
+    </header>
+
+    <main>
+        <form action="https://www.google.com/search?">
+            <div>
+                <label for="q">Search</label>
+                <input type="text" id="q" placeholder="Enter your query" name="q"/>
+            </div>
+            
+            <div>
+                <label for="age">I am 18+</label>
+                <input type="checkbox" id="age" name="age" checked/>
+            </div>
+
+            <div>
+                <input type="radio" id="apple" name="fruit" value="apple"/>
+                <label for="apple">Apple</label>
+            </div>
+
+            <div>
+                <input type="radio" id="mango" name="fruit" value="mango"/>
+                <label for="mango">Mango</label>
+            </div>
+
+            <div>
+                <select id="profession" name="profession">
+                    <option value="stu">Student</option>
+                    <option value="work">Working</option>
+                    <option value="dev"selected>Developer</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="volume">Volume</label>
+                <input id="volume" type="range" min="10" max="50" step="5" name="vol">
+            </div>
+
+            <div>
+                <button type="submit">Click me</button>
+                <button type="reset">Reset</button>
+            </div>
+
+            <div>
+                <label for="feedback">Provide Your Valuable Feedback</label>
+                <textarea name="reply" id="feedback" cols="30" rows="5"></textarea>
+                
+            </div>
+        </form>
+    </main>
+</body>
+</html>

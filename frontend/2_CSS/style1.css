@@ -1,0 +1,67 @@
+/*Understanding selectors and combinators*/
+
+/*Universal Selector*/
+*{
+    font-family:'Courier';
+    background-color: aliceblue;
+}
+
+/*Element selector*/
+h1, h3{
+    color: rgb(244, 22, 36);
+}
+
+/*Id-selector*/
+#login, #signup{
+    color:black;
+    font-style:italic;
+    background-color: rgb(244, 22, 36);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*Class-selector*/
+.up{
+    color:darkblue;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: cadetblue;
+}
+
+/*Descendant selector*/
+main a{
+    color:darkturquoise;
+    font-family: fantasy;
+}
+nav ul li, a{
+    color:crimson;
+}
+
+/*Attribute selector*/
+input[type="password"]{
+    color:green;
+}
+input[type="text"]{
+    color:blueviolet;
+}
+input[type]{
+    background-color:cyan;
+}
+
+h1::first-letter{
+    color:fuchsia;
+}
+
+button:active{
+    background-color: black;
+}
+
+p::first-line{
+    font-style:italic;
+}
+
+h1::selection{
+    background-color:lightgreen;
+}
+
+.hello{
+    color:gold;
+}

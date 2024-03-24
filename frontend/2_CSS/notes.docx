@@ -1,0 +1,204 @@
+CSS- Getting Started
+    What is CSS?
+        It is a language that is used to describe the style of a document.
+
+    Basic Format of CSS:
+        Syntax:
+            h1{
+                color:red;
+            }
+
+        How to include style?
+            1.  Using Inline style
+
+            2.  Using <style> tag:  
+                    Style is added using the <style> in the same document.
+                    e.g., <style>
+                                h1{
+                                    color:red;
+                                }
+                            </style>
+                            
+            3.  External Stylesheet:    
+                    Writing CSS in a seperate document & linking it with HTML file.
+
+            4.  Linking HTML with CSS file:
+                    <head>
+                        <link rel="stylesheet" ref="style.css">
+                    </head>
+
+            5.  Color Property:
+                    Used to set the color of the foreground.
+                    e.g., color:purple;
+                        color:#ffffff;
+
+            6.  Background color property:
+                    Used to set the color of the background.
+                    e.g., background-color:purple;
+                        background-color:#ffffff
+
+            7.  Color Systems:
+                    i.      named system:       direclty using the name of the color.
+                    ii.     rgb system:         red green blue, e.g., color=rgb(0,0,0); 
+                                                can use google's color picker.  
+                    iii.    Hexadecimal or Hex: e.g., color=#ffffff
+                                                    letters: 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F
+                                                type of rgb format where ff-denote r, ff-denote g, ff-denote b.
+
+            8.  Text Properties:    
+                    i.      text-align: left, right, center, start, end, justify.
+
+                    ii.     font-weight: ranges from 100-700, by default normal(400) and bold(700), bolder and lighter.
+
+                    iii.    text-decoration:
+                                sets the appearance of the decorative lines on text like underline.
+                                e.g., text-decoration: underline
+                                    text-decoration: overline
+                                    text-decoration: line-through
+                                for more such, search on mdn.
+
+                                Usecase: used for removing underline from links on anchor tag.
+                                            syntaax: a{
+                                                text-decoration: none
+                                            }
+                    iv.     line-height:
+                                controls the height of the line of text.
+                                syntax: line-height: normal
+                                        line-height: 2.5
+
+                    v.      letter-spacing: controls the horizontal spacing behavior between text characters.
+                                            e.g., letter-spacing: normal
+                                                letter-spacing: 10px
+                    vi.     font-size:
+
+                Note:   96px = 1 inch, not suitable for responsive websites (in responsive websites we use relative units.)
+
+    Font-family: specifies a prioritized list of one or more font family names.
+                    font-family: arial;
+                    font-family: avant garde, didot, sans-serif;
+                    visit:  cssfontstack.com
+
+
+CSS- Level 2
+    1.  Selectors:
+            Types:
+                1.  Element Selectors: selects elements like h1, p, a etc.
+                2.  Universal Selector: to select everything in a document, denoted using '*'.
+                3.  Id-selector: selects an element based on the value of the element's id attribute, accessed using '#'.
+                4.  Class-selector: selects an element based on their class attribute, accessed using '.'.
+                5.  Descendent selector: selects all paragraphs inside divs.
+                                            e.g., div p{
+                                                property:value;
+                                            }
+                6.  Attribute selector: select elements based on the presence or value of a given attribute.
+    
+    2.  Combinators: used to combine multiple combinators.
+            Types:
+                1.  Adjacent sibling combinator: denoted using '+'.
+                        e.g., heading3 that comes immediately after any paragraph.
+
+                2.  Child combinator: denoted using '>'.
+                        e.g., selects all buttons which are direct children of spans.
+
+    3.  Pseudo Class:   A keyword added to a selector that specifies a special state of the selected element(s).
+            Types:
+                1.  :hover          : moving the cursor to an element        
+                2.  :active         : when an element is clicked, e.g., button.
+                3.  :checked        : generally used for radio buttons or checkbox.
+                4.  nth-of-type
+
+            Syntax:
+                element_name:pseudo_class_type
+
+    4.  Pseudo Elements:    A keyword added to a selector that lets you style a specific part of the selected part of the selected element(s).
+            Types:
+                1.  ::first-letter      : used to apply effects on the first letter of the html element under consideration.
+                2.  ::first-line        : used to apply effects on the first line of the html element under consideration.
+                3.  ::selection         : used to apply effects on the selected area of the html element under consideration.
+
+    5.  CSS- Cascading StyleSheets:
+            1.  Cascade in CSS?
+                    The CSS cascade algorithm's job is to select CSS decorations in order to determine the correct values for CSS properties.
+                        e.g., h2{
+                            background-color: yellow;
+                        }
+
+                        h2{
+                            background-color: blue;
+                        }
+                    
+                    Applicable to single document as well as multiple documents.
+
+                    In case of multiple documents, the css file which included in the last of the html file is considerable.
+
+            2.  Selector specificity:
+                    Specificity is an algorithm that calculates the weight that is applied to a given CSS declaration.
+
+                    Priority rule:
+                        id > class > element
+
+                    Better: use more selectors to specifiy an element, then there are higher chances of changing the element.
+
+                    Mathematically, specificity is a three digit number.
+                        _____      _____       _____
+                        id      class,          element
+                                attribute       &
+                                & pseudo        pseudo-
+                                -class          element
+
+                    Shown by VScode itself in that
+
+                    Note:   If specificity same, then check cascading.
+
+            3.  Inline Specificity:
+                    Inline style are more specific than id.
+
+                    Note:   Inline styles are the ones that are mentioned in the html file itself.
+
+            4.  !important:
+                    To show the most specific thing in document.
+
+                    e.g., h2{
+                        background-color: blue !important;
+                    }
+
+    6.  Inheritance in CSS:
+            1.  Input elements and buttons, by-default doesn't inherit properties.
+
+            2.  For input elements and button to inherit properties, we need to write :
+                    input{
+                        background-color: inherit;
+                    }
+                    button{
+                        background-color: inherit;
+                    }
+
+            3.  Every property by-default doesn't get inherited.
+                    e.g., width, height, border.
+
+            4.  Important:
+                    While selecting colors for designing webpages, we can use the followings:
+                        1. coolors for color pallets.
+                        2. canva for color pallets.
+                        3. colorspace for color pallets.
+
+
+INTERMEDIATE CSS
+
+CSS- Level 3
+
+    1.  Box-Model in CSS:
+        i.      Height:     By default, it sets the content area height of the element.
+                                Syntax: div{
+                                    height: 10px;
+                                }
+        ii.     Width:
+        iii.    Border:
+        iv.     Padding:
+        v.      Margin:
+
+
+
+
+
+                    

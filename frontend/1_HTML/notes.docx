@@ -1,0 +1,231 @@
+HTML- Level 1
+    In order to generate boilerplate code in html use '!' in VS Code.
+    
+    The components used to design the structure of websites are called HTML tags or a container for some content or other tags.
+    1.  <p>Text</p>     Paragraph
+    2.  <h1>Text</h1>   Heading     (upto <h6></h6>)
+    3.  <b>Text</b>     Bold
+    4.  <u>Text</u>     Underline
+    5.  <i>Text</i>     Italics  
+    6.  <ul>
+            <li>Text</li>
+        </ul>           unordered list  (bullet points) could contain attributes
+    7.  <ol>
+            <li>Text</li>
+        </ol>           ordered list    (numerical or alphabetic points)    could contain attributes
+    8.  Anchor Element: 
+            Used to add links to your page.
+            Hypertext Reference
+            <a  href="https://www.google.com">Google></a>
+    9.  Image Element:
+            Used to add image to your page.
+            e.g.,   <img src="image.png" alt="Image Not Found">
+                here, image.png is relative url, instead we can use absolute link also.
+            Single tag (i.e., no opening and closing tag).
+            e.g.,   <img src="ironman.jpeg" alt="Ironman image" height="300px"  width="'300px">
+    10. Br Tag:
+            Used to add next line (line breaks) to your page.
+            Syntax: <rb>
+            e.g.,   <p>My name is <br> Ritika Upadhyay and I study <br> B.Tech.</p>
+
+
+
+    HTML supports nesting of tags.
+    e.g., <h1>The Cat is Coding <b>This website is owned by Ritika Upadhyay</b></h1>
+    
+    HTML attributes:    Attributes are used to add more information to the tag.
+    e.g.,   <ol type = "a">
+            <html lang = "en">
+
+    Comments in HTML:   This is part of code that should not be parsed.
+                        Syntax: <!--Text-->
+                        e.g.,   <!--This is a HTML comment-->
+                        VScode shortcut for commenting: Select the text to be commented out.
+                                                        Press Ctrl + /
+                                                    
+    Resource MDN (website): Used for development guide.
+
+    HTML is NOT case-sensitive language.
+
+    How to add symbol for HTML code?    HTML have name code for symbols.
+                                        Search for "HTML code for ___ symbol."
+
+HTML- Level 2
+
+        1.  Inline vs Block Elements:
+                Block elements-
+                        Takes up the full-width available (whole block.)
+                        Start from new line.
+                        e.g., heading element, paragraph element
+                Inline elements-
+                        Takes up only necessary width.
+                        Don't start from new line.
+                        e.g., anchor element, image element
+
+        2.  Div Element:
+                Doesn't have any of its own functionality.
+                Div is a container used to hold other HTML elements or group elements together.
+                It is a block element.
+                Syntax: <div>HTML_content</div>
+
+        3.  Span element:
+                Generic container used to hold other HTML elements or group together.
+                It is an inline element.
+                Syntax: <span>html_content</span>
+
+        4.  Hr Tag:
+                Page divider, used to horizonatally seperate pages.
+                Syntax: </hr>
+
+        5.  Sub and Sup Tag:
+                Subscript and Superscript.
+                e.g., <p>a<sup>2</sup></p>
+                        <p>H<sub>2</sub>O</p>
+
+        6.  Semantic Markup:
+                It is the markup that relates to the meaning of content.
+                Types of tag:
+                        i.  Semantic- eg., <h1>, <p>, <img>
+                        ii. non-semantic-   <div>, <span>
+                Benefit:
+                        i.  Website's layout become structured.
+                        ii. Website becomes SEO friendly.
+                        iii.Readable + Screen Reader, enhances UX.
+
+        7.  Semantic Tags:
+                i.  <header>Text</header>   To display the header of the webpage.
+                ii. <main>Text</main>       To display the main content of the webpage.
+                iii.<footer>Text</footer>   To display the footer of the webpage.
+                iv. <nav>Text</nav>         Used for navigation from current section/webpage to some another section/webpage.
+                v.  <article>Text</article> 
+                vi. <section>Text</section> Similar to div tag, but helpful for semantic markup and seo.
+                vii.<aside>Text</aside>     Used to provide related links.
+
+        8.  HTML Entities:
+                An html entitiy is a piece of text ("String") that begins with an ampersand(&) and ends with a semicolon(.).
+                Used to display reserved characters (which would otherwise be interpreted as html code), and an invisible characters (like non-breaking spaces.)
+                Can also used in place of characters that are difficult to type with a standard keyboard.
+                Browser interprets them and renders corrrect character.
+                Can be easily searched using Google or using MDN.
+
+        9.  Emmets:
+                i.  Parent-Child relationship: constructed using '>' in html.
+                        e.g., p>div>b>
+                ii. Sibling relationship:  constructed using '+' in html.
+                        e.g., p>div+b
+                iii.Multiplication: constructed using '*' in html.
+                        e.g., ul>li*5
+                iv. Boilerplate: '!'
+
+        10. What is HTML5?
+                The term HTML5 is essentially a buzzword that refers to a set of modern web technologies.
+                This includes the HTML Living Standard, along with Javascript APIs to enhance storage, multimedia, and hardware access.
+                HTML5 consists of two things:
+                        i.  new features/upgrades in HTML
+                        ii. other things/features not part of HTML
+
+        11. How HTML works?
+                HTML Standard is a document that tells to the browser how HTML should work.
+                HTML code -> browser -> renders webpage (according to the html standard.)
+
+        12. Learn to implement video tag:
+                Source: MDN
+
+HTML- Level 3
+
+        1. Tables in HTML:
+                Tables are used to represent real life table data.
+                
+                Main Row of table- header
+
+                Tags to create a table:
+                        i.      <caption>Text</caption> Used for giving a title to the table.
+                        ii.     <tr>Text</tr>           Used to display table row. (row)
+                        iii.    <th>Text</th>           Used to display table header. (header)
+                        iv.     <td>Text</td>           Used to display table data. (data)
+                        v.      <thead></thead>         Used to wrap table header. (semantics)
+                        vi.     <tbody><tbody>          Used to wrap table body. (semamtics)
+                        vii.    <tfoot></tfoot>         Used to wrap table footer. (semantics)
+
+                Note: <th> and <td> comes under the <tr> tag.
+
+        2. Colspan and Rowspan Attributes:
+                Used to create cells which spans over multiple rows and columns.
+
+                e.g., <th colspan="2">Price</th>
+                      <th rowspan="2">Item</th>
+
+        3. Forms in HTML:
+                <form>form_content</form>
+
+                Action attribute inside form:   Action attribute is used to define what action
+                                                needs to be performed when a form is submitted
+                                                or where the form data should be sent.
+
+                Different Form Elements:
+
+                1.      Input:
+                                Used to create multiple form controls.
+                                There are multiple types of inputs that can be created using type attribute.
+
+                                Attributes:
+                                1.      type- indicates type of the input
+                                2.      placeholder- indicates default text to show in the input block to user
+                                3.      name-   name of the form control. Submitted with the form as part of a name/value pair.
+                                                syntax: <input type="text" placeholder="enter name" id="username" name="username"/>
+
+                2.      Label:
+                                Label element represents a caption for an item in a user interface.
+                                <input> and name of the input should come inside this tag.
+
+                                Label Classical Approach (Which we'll be using)
+                                        Using 'for' in <label> and, 'id' in <input>
+                                        Syntax: <label for="username">Enter your Username:</label>
+                                                <input type="text" id="username">
+
+                3.      Button:
+                                Type attribute:
+                                i.      Type submit:    <button type="submit">submit</button>
+                                ii.     Type button:    <button type="button">do something</button>
+                                iii.    Type reset:     <button type="reset">do something</button>
+
+                4.      Checkbox Input Element:  
+                                Syntax: 
+                                        <label for="age">I am 18+</label>
+                                        <input type="checkbox" name="age" id="age" checked/>
+                                                here 'checked' represents by defalt checked for checkbox
+                                                we can write 'unchecked' also.
+
+                5.      Radio Button Input Element:
+                                Syntax:
+                                        <label for="apple">Apple</label>
+                                        <input type="radio" id="apple" name="fruit" value="apple">
+
+                                        <label for="mango">Mango</label>
+                                        <input type="radio" id="mango" name="fruit" value="mango">
+
+                6.      Dropdown:       
+                                Syntax:
+                                        <select name="profession" id="profession">
+                                                <option value="student">Student</option>
+                                                <option value="dev">Developer</option>
+                                        </select>
+
+                7.      Range Input Element:
+                                Syntax:
+                                        <label for="volume">Volume</label>
+                                        <input id="volume" type="range" min="0" max="100" name="vol"/>
+
+                8.      Text Area Tag:
+                                Syntax:
+                                        <label for="feedback">Please provide your valuable feedback:</label>
+                                        <textarea id="feedback"></textarea>
+
+
+
+
+
+
+
+
+
