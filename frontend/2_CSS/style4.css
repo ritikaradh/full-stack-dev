@@ -1,0 +1,18 @@
+div[id="div1"]{
+  height: 200px;
+  width: 500px;
+  background-color: pink;
+  border-width: 5px;
+  border-style: dashed;
+  border-color: orange;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+

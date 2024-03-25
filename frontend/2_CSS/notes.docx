@@ -192,11 +192,143 @@ CSS- Level 3
                                 Syntax: div{
                                     height: 10px;
                                 }
-        ii.     Width:
-        iii.    Border:
-        iv.     Padding:
-        v.      Margin:
 
+        ii.     Width:      By default, it sets the content area width of the element.
+                                Syntax: div{
+                                    width: 300px;
+                                }
+
+        iii.    Border:     Used to set an element's border.
+
+                            Types:
+                                a.  border-width
+                                b.  border-style
+                                c.  border-color
+
+                            Border shorthand:   width | style | color
+
+                            Border sides:   To control an individual side of the box.
+                                a.  border-left
+                                b.  border-right
+                                c.  border-top
+                                d.  border-bottom
+
+                                Syntax: border-left-color: orange;
+
+                            Border radius:  Used to round the corners of an element's outer border edge.
+                                                e.g., div{
+                                                    border-radius: 15px;
+                                                }
+
+                                                div{
+                                                    border-radius: 50%;
+                                                }
+
+        iv.     Padding:    
+                    Types:
+                        a.  padding-left:
+                        b.  padding-right:
+                        c.  padding-top:
+                        d.  padding-bottom:
+
+                    Padding shorthand:
+                        a.  for all 4 sides:
+                                padding: 50px;
+
+                        b.  top & bottom | left & right:
+                                padding: 1px 2px;
+
+                        c.  top | left & right | bottom:
+                                padding: 1px 2px 3 px;
+
+                        d.  top | right | bottom | left:
+                                padding: 1px 2px 3px 4px;
+                                (clockwise)
+
+        v.      Margin: To set spacing on the outside of border.
+                    Types:
+                        a.  margin-left:
+                        b.  margin-right:
+                        c.  margin-top:
+                        d.  margin-bottom:
+
+                    Margin-shorthand:
+                        a.  for all 4 sides:
+                                margin: 50px;
+                        b.  top & bottom | left & right:
+                                margin: 1px 2px;
+                        c.  top | left & right | bottom:
+                                margin: 1px 2px 3px;
+                        d.  top | right | bottom | left:
+                                margin: 1px 2px 3px 4px;
+
+    2.  Display:
+            It sets whether an element is treated as a block or inline element and the layout used for its children.
+
+            Types:
+                display:inline
+                display:block
+                display:inline-block
+                display:none
+
+    3.  Units in CSS:
+            Types:
+                A.  Absolute Units:
+                        i.      px
+                        ii.     pt
+                        iii.    pc
+                        iv.     cm
+                        v.      mm
+                        vi.     in
+                
+                B.  Relative Units:
+                        i.      %
+                        ii.     em
+                        iii.    rem
+                        iv.     ch
+                        v.      vh
+                        vi.     vw + manymore
+
+                Percentage (%) Relative Unit:
+                    It is often used to define a size as relative to an element's parent object.
+                    e.g., width: 33.33% //relative to the parent
+                        margin-left: 50% //relative to the parent-size (i.e., parent's height and width)
+
+                Em relative unit:
+                    Font-size of the parent, in the case of typographical properties like font-size and font size of
+                    the element itself, in the case of other properties like width.
+                    e.g., outer{
+                        height: 40px;
+                        width: 400px;
+                        border: 2px solid black;
+                        background-color: pink;
+                        font-size: 20px;
+                    }
+
+                    inner{
+                        height: 100px;
+                        width: 100px;
+                        background-color: cornflower;
+                        font-size: 2em;
+                    }
+
+                    Here 2em means double of parent's, similarly 3 em, 1.5em, 0.5em
+
+                    inner{
+                        font-size: 10px;
+                        padding: 1em; = 30px; (em relative to itself.)
+                    }
+
+                    Drawback of Em:
+                        Snowball effect in nested elements.
+
+    4.  Rem (Root em):
+            Font-size of the root element.
+
+            For an html document, the root element is <html>.
+            So, rem will work according to that. Here, font-size is changing based on
+            <html>, not <section>.
+                    
 
 
 

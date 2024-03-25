@@ -1,0 +1,44 @@
+h2{
+    font-family: cursive;
+    text-align: center;
+    height: 50px;
+    padding: 25px;
+}
+
+h1{
+    text-transform: uppercase;
+    padding: 20px;
+    margin: 30px;
+    font-family: 'Times New Roman';
+    text-align: center;
+    background-color: blueviolet;
+    height: 50px;
+    border-radius: 5%;
+}
+
+div[class="inner"]{
+    font-style: italic;
+    color:darkblue;
+    height: 100px;
+}
+
+label[class="outer"]:hover{
+    background-color: aquamarine;
+}
+
+footer{
+    margin-top:500px;
+}
+
+#a{
+    height: 400px;
+    width: 400px;
+    background-color: pink;
+}
+
+#b{
+    height: 100px;
+    width: 100px;
+    background-color: cornflowerblue;
+}
+
