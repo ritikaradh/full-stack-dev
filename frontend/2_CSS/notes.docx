@@ -453,11 +453,32 @@ CSS- Level 4
                             This is the default value.
 
                 ii.     relative:
+                            The offset is relative to itself based on the values of top, right,
+                            bottom, and left.
                             
-                iii.    absolute 
-                iv.     fixed
-            
+                iii.    absolute:
+                            The element is removed from the normal document flow, and no space is
+                            created for the element in the page layout.
 
+                            It is positioned relative to its closest positioned ancestor, if any,
+                            otherwise, it is placed relative to the initial containing block.
 
+                            This attribute assigns space to the element under consideration relative
+                            to the parent element or the ancestor element.
+
+                            Also, this attribute doesn't assign any space individually to the element
+                            consideration, i.e., the position or place where the element is currently
+                            placed in the document is the only space that belong's to the element and 
+                            no other space.
+
+                iv.     fixed:
+                            The element is removed from the normal document flow, and no space is created
+                            for the element in the page layout.
+
+                            It is positioned relative to the initial containing block established by the
+                            viewport.
+
+                v.      sticky:
+                            Refer to MDN.   
 
                     
