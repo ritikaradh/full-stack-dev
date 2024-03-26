@@ -328,6 +328,29 @@ CSS- Level 3
             For an html document, the root element is <html>.
             So, rem will work according to that. Here, font-size is changing based on
             <html>, not <section>.
+
+
+CSS- Level 4
+
+    1.  Alpha Channel:  
+            Sets the opacity for a color.
+
+            Ranges from 0 to 1.
+
+            rgba(255, 255, 255, 0.3)
+
+            rgba in hexcode:
+                starting 6 digits represent colors, last 4 digits represent opacity.
+
+            opacity in haexcode ranges from 00-ff.
+
+    2.  Opacity Property:
+            Sets the opacity for the element.
+
+            Ranges from 0 to 1.
+
+            Syntax:
+                opacity: 0.5
                     
 
 
