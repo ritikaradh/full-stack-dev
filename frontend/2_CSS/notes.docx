@@ -351,8 +351,82 @@ CSS- Level 4
 
             Syntax:
                 opacity: 0.5
-                    
 
+    3.  CSS Transitions:
+            Transitions enable you to define the transition between two states of an element.
+                e.g., transition: 2s;
+
+            Properties:
+                1.  transition-delay
+                2.  transition-duration
+
+            Transition shorthand:
+                Syntax:
+                    property name | duration | timing-function | delay
+
+                For more, visit MDN website.
+
+            For centering an html or div in a website, use the followings:
+                margin: 0 auto;
+    
+    4.  CSS Transforms:
+            This property lets you rotate, scale, skew, or translate an element.
+
+            Syntax:
+                tranform: rotate(45deg) scale(2) translate(3px);
+
+            Properties:
+                i.      rotate:
+                            syntax:
+                                transform: rotate(45deg);
+                                transform: rotate(-45deg);
+
+                ii.     scale:  
+                            stretches the element along x and y both.
+
+                            syntax:
+                                transform: scale(0.5);
+                                transform: scale(1.5);
+
+                            Could be implemented using scaleX and scaleY, 
+                                stretches the element individually along x or y axis.
+
+                            Syntax:
+                                transform: scaleX(0.5);
+                                transform: scaleY(2);
+
+                iii.    translate:
+                            Moves the element upto a certain distance in 2D.
+                            
+                            Syntax:
+                                transform: translate(100px, 100px);
+                                transform: translateX(100px);
+                                transform: translateY(50px);
+                                tranform: translate(-50px);
+
+                iv.     skew:
+                            Tilting the element in some degrees.
+                            
+                            Syntax:
+                                similar to rotate.
+
+                                transform: skew(50deg);
+
+                            Note: skewing an element along 90deg will cause disappeared element
+                                    or just a point.
+
+            Note: Tranform properties applied to an element is also applied to the elements
+                    inside.
+
+    5.  Box Shadow:
+            It adds shadow effects around an element's frame.
+
+            Syntax:
+                box-shadow: x_offset | y_offset | blur_radius | color
+
+            e.g.,
+                box-shadow: 2px 2px 10px green;
+            
 
 
 
