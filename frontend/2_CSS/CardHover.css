@@ -1,0 +1,38 @@
+.card{
+    height: 300px;
+    width: 200px;
+    margin: 30px;
+    background-color: lavender;
+    display: inline-block;
+    transition-duration: 0.3s;
+    transition-delay: 0.1s;
+}
+
+#image1{
+    height: 150px;
+    width: 200px;
+    background-image: url("image1.jpg");
+    background-size: cover;
+
+}
+
+#image2{
+    height:150px;
+    width:200px;
+    background-image: url("image2.jpg");
+    background-size: cover;
+}
+
+.designation{
+    padding: 25px;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 10px black;
+}
