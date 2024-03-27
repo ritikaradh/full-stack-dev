@@ -1,0 +1,65 @@
+CSS- LEVEL 5
+
+FLEXBOX
+
+
+1.      What is Flexbox?
+            Flexible Box Layout.
+
+            It is a one-dimensional layout method for arranging items in rows and columns.
+
+            Flexbox helps in manipulating webpages to be responsive i.e., changing layout of webpage according to various screen size.
+
+            1.1     The Flex Model:
+                        Assigning flexbox properties to an html element.
+
+            1.2     Flexbox Direction:
+                        It sets how flex items are placed in the flex container, along with axis and direction.
+
+                        i.      flexbox-direction: row;     main axis, left to right.
+                        ii.     flexbox-direction: row-reverse;      main axis, right to left.
+                        iii.    flexbox-direction: column;      main axis, top to bottom
+                        iv.     flexbox-direction: column-reverse       main axis, bottom to top.
+
+            1.3     Justify Content:
+                        Tells how the browser distributes space between and around content items along the main-axis.
+
+                        i.      justify-content: flex-start;
+                        ii.     justify-content: flex-end;
+                        iii.    justify-content: center;
+                        iv.     justify-content: space-between;
+                        v.      justify-content: space-around;
+                        vi.     justify-content: space-evenly;
+            
+            1.4     Flex-Wrap:
+                        Sets whether flex items are forced onto one line or can wrap onto multiple lines.
+
+                        i.      flex-wrap:  nowrap;     (decreasing the width of the elements in a container to fit within same line.)
+                        ii.     flex-wrap:  wrap;
+                        iii.    flex-wrap:  wrap-reverse;
+
+            1.5     Align Items:
+                        Distributes our items along the cross axis.
+
+                        i.      justify-content: flex-start;
+                        ii.     justify-content: flex-end;
+                        iii.    justify-content: center;
+                        iv.     justify-content: baseline;      (text-aligned.)
+
+            1.6     Align Content:
+                        It sets the distribution of space between and around content items along a flexbox's cross-axis.
+
+                        i.      align-content:  flex-start / flex-end / center
+                        ii.     align-content:  space-between / space-around / evenly
+                        iii.    align-content:  baseline;
+
+            1.7     Align Self:
+                        Align an item along the cross axis.
+
+                        i.      align-self: flex-start;
+                        ii.     align-self: flex-end;
+                        iii.    align-self: center;
+                        iv.     align-self: baseline;
+
+                        Note:   Align-self is always in higher property as compared to align content.
+
