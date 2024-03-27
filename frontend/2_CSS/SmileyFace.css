@@ -1,0 +1,41 @@
+.outermost{
+    height: 500px;
+    width: 500px;
+    background-color: rgb(246, 198, 180);
+    margin: 0 auto;
+}
+
+.face{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: rgb(254, 254, 175);
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+#eye1, #eye2{
+    height: 30px;
+    width: 30px; 
+    border-radius: 50%;
+    background-color:rgb(136, 136, 178);
+    position: absolute;
+    display: inline-block;
+    top: 70px;
+    left: 100px;
+}
+
+#mouth{
+    height: 50px;
+    width: 100px;
+    border-radius: 0 0 50px 50px;
+    background-color:rgb(250, 168, 181);
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+
+#eye2{
+    left: 170px;
+}
