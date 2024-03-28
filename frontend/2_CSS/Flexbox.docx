@@ -63,3 +63,29 @@ FLEXBOX
 
                         Note:   Align-self is always in higher property as compared to align content.
 
+            1.8     Flex Sizing:
+                        i.      Flex basis:
+                                    It sets the initial main size of a flex item.
+
+                                    Syntax:
+                                        flex-basis: 100px;
+
+                        ii.     Flex Grow:
+                                    It specifies how much of the flex container's remaining space should be assigned to the flex item's main size.
+
+                                    flex-grow: 1; (by-default)
+
+                                    max-width / min-width
+                                    max-height / min-height
+
+                        iii.    Flex Shrink:
+                                    It sets the flex-shrink factor of a flex item.
+
+                                    flex-shrink: 1;     (by-default)
+
+                        iv.     Flex-shorthand:
+                                    i.      flex-grow | flex-shrink | flex-basis: flex: 2 2 100px;
+                                    ii.     flex-grow | flex-basis: flex: 2 100px;
+                                    iii.    flex-grow: flex: 2; (unitless)
+                                    iv.     flex-basis: flex: 100px;
+
