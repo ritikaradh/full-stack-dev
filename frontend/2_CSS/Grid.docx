@@ -1,0 +1,71 @@
+CSS GRID
+
+CSS Grid:
+    Setting a container's display to grid will make all children grid items.
+
+    We can design the layout of the website in 2D (unlike flexbox.)
+
+    There are little usecases of grid e.g., tables etc.,.
+
+    Syntax: container{
+        display:grid;
+    }
+
+The Grid Model:
+1.      Grid Lines: row lines and column lines.
+2.      Grid Cell: space inside a row line and a column line.
+3.      Grid Track: space inside two row line or two column lines, contains multiple grid cells.
+
+Grid Template:
+    They define the lines and track sizing.
+
+    grid-template-rows: 100px 100px 100px;
+
+    grid-template-columns: 200px 200px 200px;
+
+    grid-template-columns: auto auto auto;  //auto auto auto equally divides the space into three columns based on the content inside the div.
+
+    -> Repeat: repeat is used to divide all available space.
+        Syntax:
+        1.      grid-template-rows: repeat(count, 1fr)
+                grid-template-columns: repeat(count, 1fr)
+
+        2.      grid-template-rows: repeat(2, fr);
+                grid-template-rows: 1fr 1fr;
+
+        Here, 1fr represents 1 fraction of 100% available space.
+
+        Repeat is considered to be better than auto.
+
+    -> Grid Gaps: They define the gaps between the lines.
+    i.      row-gap
+    ii.     column-gap
+    iii.    grid-gap: rowGap columnGap
+
+    -> Grid Columns: Define an item's starting and ending position inside the column.
+        Syntax:
+            1.      grid-column-start: line_number;
+                    grid-column-end: line_number;
+
+            2.      grid-column: start_col / end_col;
+                    grid-column: start_col / span 3;
+
+    -> Grid Rows: Defines an item's starting and ending position inside the row.
+        Syntax:
+            1.      grid-row-start: line_number
+                    grid-row-end: line_number
+
+            2.      grid-row: start_row / end_row
+                    grid-row: start_row / span 3;
+
+    -> Grid Properties:
+            1.  justify-items:   (containers)    horizontal
+            2.  justify-self:   (item)          horizontal
+
+            3.  align-items:    (container)     vertical
+            4.  align-self:     (item)          vertical
+
+            5.  place-items:
+            6.  place-self:
+
+            7.  display: inline-grid.

@@ -1,0 +1,28 @@
+.container{
+    height: 300px;
+    width: 600px;
+    background-color:aquamarine;
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 150px 150px 150px;
+    row-gap: 10px;
+    column-gap: 20px;
+}
+
+.item{
+    background-color:rgb(241, 179, 200);
+    border: 2px solid black;
+    text-align: center;
+}
+
+#one{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#five{
+    grid-column: 2/span 2;
+    grid-row: 2/span 2;
+}
