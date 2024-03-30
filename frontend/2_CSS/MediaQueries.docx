@@ -1,0 +1,46 @@
+Media Queries:
+
+    1.      Helps create a responsive website.
+
+    2.      Source-     medium.com
+
+    3.      Media features- width (of viewport), there are manymore features of viewport that could be changed or modified accordingly using CSS.
+
+                @media(width: 400px) {
+                    div{
+                        background-color: red;
+                    }
+                }
+
+                --> Most commonly used:
+                
+                    @media (min-width: 400px){
+                        div{
+                            background-color: red;
+                        }
+                    }
+
+                    @media (max-width){
+                        background-color: orange;
+                    }
+
+                --> Responsiveness is commonly used in navbar.
+                --> We can hide or show an html element according to the responsiveness.
+
+                --> Ranging the responsiveness using 'and'.
+                        @media (min-width: 200px) and (max-width: 800px){
+                            h1{
+                                something;
+                            }
+
+                            div{
+                                something;
+                            }
+                        }
+
+                --> Orientation of Viewport:    landscape or portrait
+                        @media (orientation: landscape){
+                            div{
+                                something;
+                            }
+                        }

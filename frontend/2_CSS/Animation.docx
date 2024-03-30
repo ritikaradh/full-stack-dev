@@ -1,0 +1,40 @@
+CSS Animations:
+
+    Animation in css is very similar to transition and transform, but it gives us more control over the elements.
+
+    To animate CSS elements.
+
+    Syntax: 
+        @keyframe myName{
+            from {font-size: 20px;}
+            to {font-size: 40px;}
+        }
+
+    ->  Properties:
+            1.      animation-name:
+            2.      animation-duration:
+            3.      animation-timing-function:
+            4.      animation-delay:
+            5.      animation-iteration-count:
+            6.      animation-direction:
+
+    Shorthand to write animation in css:
+        Syntax:
+            animation:  Name Duration Function Delay Count.
+
+    ->  % in Annimation:
+
+            Syntax:
+                @keyframe myName{
+                    0% {
+                        font-size: 20px;
+                    }
+
+                    50% {
+                        font-size: 30px;
+                    }
+
+                    100% {
+                        font-size: 40px;
+                    }
+                }

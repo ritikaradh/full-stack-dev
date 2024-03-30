@@ -1,0 +1,37 @@
+.box{
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+
+    animation-name: fontAnimation, colorAnimation;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+/*Created the Blue-Print of Animation*/
+@keyframes fontAnimation{
+    from {
+        font-size: 20px;
+    }
+    to{
+        font-size: 40px;
+    }
+}
+
+@keyframes colorAnimation{
+    0% {
+        background-color: pink;
+    }
+
+    50%{
+        background-color: rgb(232, 175, 232);
+    }
+
+    100% {
+        background-color: lavenderblush;
+    }
+}
