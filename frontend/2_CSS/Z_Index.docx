@@ -1,0 +1,12 @@
+Z Index:
+
+    It decides the stack of elements.
+
+    Overlapping elements with a larger z-index cover those with a smaller one.
+
+    --> We cannot set the z-index of an element whose position is static or by-default.
+
+    Syntax:
+        i.      z-index: auto(0)        by default
+        ii.     z-index: 1 / 2 /...     positive-> more -> lifts to up
+        iii.    z-index: -1 / -2 / ...  negative -> less -> lifts to bottom
