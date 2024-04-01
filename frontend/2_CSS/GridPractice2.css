@@ -1,0 +1,43 @@
+#container{
+    background-color: aliceblue;
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.inside{
+    background-color: pink;
+    text-align: center;
+}
+
+#box1{
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 1;
+}
+
+#box2{
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 10;
+}
+
+#box3{
+    grid-column: 4 / span 6;
+    grid-row: 2 / span 1;
+}
+
+#box4{
+    grid-column: 10 / span 3;
+    grid-row: 2 / span 10;
+}
+
+#box5{
+    grid-column: 4 / span 6;
+    grid-row: 3 / span 9;
+}
+
+#box6{
+    grid-column: 1 / span 12;
+    grid-row: 12 / span 1;
+}
