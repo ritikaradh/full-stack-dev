@@ -1,16 +1,64 @@
-.sidebar{
-    background-color: black;
-    opacity: 0.85;
-    position:fixed;
-    top: 0.1rem;
-    left: 0.1rem;
-    bottom: 0.1rem;
-    padding: 2rem;
-    color:#f0f8ff;
+*{
+    font-family: "Style Script", cursive;
+    font-weight: 400;
+    font-weight: bolder;
+    font-size: x-large;
 }
-.home{
-    display: flex;
-    background-image: url("photography.jpg");
+
+.main_box{
+    background-image: url(photography.jpg);
     background-size: cover;
+    height: 100vh;
 }
+
+.btn_one{
+    color: azure;
+    font-size: 2rem;
+    position: fixed;
+    left: 12rem;
+}
+
+.sidebar_menu{
+    position: fixed;
+    /*left: -12rem;*/
+    top: 0.5rem;
+    bottom: 0.5rem;
+    background-color: white;
+    opacity: 0.2;
+    box-shadow: 2rem 2rem 5rem azure;
+    width: 25vh;
+}
+
+.sidebar_menu .logo{
+    position: absolute;
+    width: 100%;
+    top: 1.5rem;
+    text-align: center;
+    border-bottom: 0.01rem solid black;
+}
+
+.sidebar_menu .logo a{
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.sidebar_menu .btn_two{
+    color: grey;
+    font-size: 2rem;
+    position: fixed;
+    top: 0.01rem;
+    left: 7rem;
+}
+
+.sidebar_menu .menu{
+    position: absolute;
+    width: 100%;
+    top: 2rem;
+}
+
+.sidebar_menu .menu li{
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+
 
