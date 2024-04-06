@@ -1,0 +1,16 @@
+.sidebar{
+    background-color: black;
+    opacity: 0.85;
+    position:fixed;
+    top: 0.1rem;
+    left: 0.1rem;
+    bottom: 0.1rem;
+    padding: 2rem;
+    color:#f0f8ff;
+}
+.home{
+    display: flex;
+    background-image: url("photography.jpg");
+    background-size: cover;
+}
+
