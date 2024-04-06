@@ -11,22 +11,25 @@
     height: 100vh;
 }
 
-.btn_one{
+.btn_one i{
     color: azure;
-    font-size: 2rem;
+    font-size: 1.3rem;
     position: fixed;
-    left: 12rem;
+    top: 1rem;
+    left: 1rem;
+    cursor: pointer;
 }
 
 .sidebar_menu{
     position: fixed;
-    /*left: -12rem;*/
+    left: -12rem;
     top: 0.5rem;
     bottom: 0.5rem;
     background-color: white;
     opacity: 0.2;
     box-shadow: 2rem 2rem 5rem azure;
-    width: 25vh;
+    width: 30vh;
+    transition: all 0.2s linear;
 }
 
 .sidebar_menu .logo{
@@ -40,25 +43,73 @@
 .sidebar_menu .logo a{
     text-decoration: none;
     font-weight: 700;
+    font-size: larger;
 }
 
-.sidebar_menu .btn_two{
+.sidebar_menu .btn_two i{
     color: grey;
-    font-size: 2rem;
-    position: fixed;
-    top: 0.01rem;
-    left: 7rem;
+    font-size: 1rem;
+    position: absolute;
+    top: 0.65rem;
+    left: 8rem;
+    cursor: pointer;
 }
 
 .sidebar_menu .menu{
     position: absolute;
     width: 100%;
-    top: 2rem;
+    top: 3rem;
 }
 
 .sidebar_menu .menu li{
-    margin-top: 1rem;
-    padding: 0.5rem;
+    list-style-type: none;
+    margin-left: -1rem;
+    margin-top: 0.1rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+}
+
+.sidebar_menu .menu li a{
+    text-decoration: none;
+}
+
+.sidebar_menu .menu i{
+    padding-right: 0.5rem;
+}
+
+.sidebar_menu .social_media{
+    position: absolute;
+    top: 90%;
+}
+
+.sidebar_menu .social_media i{
+    margin-right: 0.5rem;
+    color: blue;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#check{
+    display: none;
+}
+
+.sidebar_menu .menu li:hover{
+    border: 0.1rem solid black;
+}
+
+.sidebar_menu .social_media i:hover{
+    font-weight:bolder;
+    opacity: 1;
+}
+
+#check:checked ~ .sidebar_menu{
+    left: 0;
+    transition-delay: 0.1s;
+}
+
+#check:checked ~ .btn_one i{
+    display: none;
+    transition-delay: 0.1s;
 }
 
 
