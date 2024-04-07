@@ -5,3 +5,7 @@
 p{
     color:brown
 }
+
+.navbar, .navbar .container{
+    background-color: cornflowerblue;
+}
