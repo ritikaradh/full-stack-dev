@@ -7,3 +7,26 @@ What is Bootstrap?
     --> Makes development faster and easier.
     --> Good choice of pre-built components.
     --> Good browser compatibility.
+
+    What will be covered?
+    --> Components:     pre-built and resusable piece of user-interface(UI).
+            e.g., buttons, forms
+    --> Layouts:        overall structure and arrangement of the elements.
+            e.g., container, grid
+
+    Container:
+    --> base class= "container"
+    --> Layout
+    --> Containers are used to contain, pad, and sometimes center the content within them.
+
+    Buttons:
+    --> base class= "btn"
+
+    Badges:
+    --> components on top of an app's icon.
+
+    Alert:
+
+
+    Button Group:
+    
