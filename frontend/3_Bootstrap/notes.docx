@@ -30,3 +30,26 @@ What is Bootstrap?
 
     Button Group:
     
+
+    Navbars:
+
+
+    Forms:
+
+
+    Cards:
+
+
+Bootstrap Grid:
+        -->     12 column system: states that each row is divided into 12 columns.
+        -->     base class: container
+        -->     secondary class: row
+        -->     Vertical Alignments.
+
+
+Bootstrap Forms:
+        -->     Form controls-  base class mb3 or something else, visit getbootstrap.com/utilities/spacing
+        -->     Checkbox and Radio
+        -->     Select
+        -->     Layout
+        -->     Switches
