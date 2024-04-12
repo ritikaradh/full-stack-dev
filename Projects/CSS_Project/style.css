@@ -58,9 +58,66 @@ a{
 .nav_option{
     line-height: 2.5rem;
     padding: 0.35rem 1rem 0.35rem 1rem;
+    opacity: 0.65;
+}
+
+.nav_option:hover{
+    opacity: 1;
 }
 
 i{
     margin: 0.5rem;
     font-size:x-large;
+    margin-right: 1rem;
+}
+
+.library{
+    height: 30rem;
+    width: 20.81rem;
+    background-color: #171717;
+    padding: 0.75rem 0.5rem 0.75rem 0.5rem;
+    border-radius: 1rem; /*16px*/
+    margin-top: 0.5rem;
+}
+
+.head_library{
+    padding: 0rem 0.5rem 0.5rem;
+    width:20.81rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.your_library img{
+    height: 1.25rem;
+    width: 1.25rem;
+    margin: 0.5rem;
+    margin-right: 1rem;
+}
+
+.redirecting_icons{
+    display: flex;
+    margin-left: 5rem;
+}
+
+.redirecting_icons i{
+    height: 1.25rem;
+    width: 1.25rem; 
+    opacity: 0.65;
+    font-size: medium;
+    margin: 0.8rem;
+}
+
+.redirecting_icons i:hover{
+    opacity: 1;
+}
+
+.your_library{
+    display: flex;
+    align-items: baseline;
+    opacity: 0.65;
+}
+
+.your_library:hover{
+    opacity: 1;
 }
