@@ -14,8 +14,7 @@ body{
 .sidebar{
     width: 47.5vh;
     border-radius: 1rem; /*16px*/
-    margin: 0.5rem;
-    margin-right: 0.25rem;
+    margin: 0.5rem 0.25rem 0.5rem -50vh;
     height: 88.5vh;
 }
 
@@ -35,7 +34,7 @@ body{
     margin: 0.5rem;
     margin-left: 0.25rem;
     height: 88.5vh;
-    overflow:auto;
+    overflow: auto;
 }
 
 a{
@@ -163,15 +162,11 @@ a{
     height:10rem;
 }
 
-.main{
-    display: flex;
-}
-
 .sticky-nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 10vh;
+    height: 5rem;
     width: 100%;
     background-color: rgb(40, 39, 39);
 }
@@ -238,6 +233,56 @@ a{
     opacity: 1;
 }
 
+.cards-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+h2{
+    margin-left: 1rem;
+}
+
+.card{
+    width: 9.375rem;
+    border-radius:0.5rem;
+    padding: 1rem;
+    margin: 0 -0.25rem 0 1rem;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    background-color: rgb(40, 39, 39);
+}
+
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-title{
+    font-weight: 600;
+}
+
+.card-info{
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+.footer{
+    height: 18.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line{
+    height: 30%;
+    width: 90%;
+    border-top: 0.125rem solid white;
+    opacity: 0.3;
+}
+
 @media (max-width: 1000px){
     .hidden1{
         display: none;
@@ -247,6 +292,12 @@ a{
 @media (max-width: 700px){
     .hidden2{
         display: none;
+    }
+}
+
+@media (min-width: 700px){
+    .sidebar{
+        margin-left: 0.5rem;
     }
 }
 
