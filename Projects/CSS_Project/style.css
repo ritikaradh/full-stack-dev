@@ -290,14 +290,14 @@ h2{
 }
 
 .music-player-album{
-    width: 25%;
+    width: 30%;
 }
 
 .player{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
+    width: 40%;
 }
 
 .player-control-icon{
@@ -326,7 +326,7 @@ h2{
 
 /*refer to quirksmode.org*/
 .progress-bar{
-    width:45%;
+    width:70%;
     appearance: none;
     cursor: pointer;
     background: transparent;  
@@ -352,7 +352,36 @@ h2{
 }
 
 .music-player-controller{
-    width: 25%;
+    width: 30%;
+}
+
+.music-player-album{
+    padding-left: 0.5rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.music-player-album div{
+    margin: 0 0.25rem 0 0.25rem;
+    padding: 0 0.2rem 0 0.2rem;
+    align-content: center;
+}
+
+.music-info{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+}
+
+.music-plus-icon span{
+    opacity: 0.6;
+}
+
+.music-plus-icon span:hover{
+    transform: scale(1.01);
+    opacity: 1;
 }
 
 @media (max-width: 1000px){
