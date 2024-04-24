@@ -19,6 +19,21 @@ CHAPTER 1
                     ->      Integers (45, -50)
                     ->      Floating numbers- with decimal (4.6, -8.9)
 
+            ii.     Boolean:
+                        ->  represents a truth value-> true or false / yes or no
+                                let age= 23;
+                                let isAdult= true;
+
+                                let age= 13;
+                                let isAdult= false;
+
+            iii.    Undefined:
+                        ->  A variable that has not been assigned a value is of type undefined.
+
+            iv.     Null:
+                        ->  The null value represents the intentional absence of any object value.
+                        ->  To be explicitly assigned.
+
 2.      Operations in JS:
             ->  Modulo (remainder operator)
             ->  Exponentiation (power operator)
@@ -53,4 +68,54 @@ CHAPTER 1
                       year= 2026; //Error
                       year= year + 1; //Error
                       const g= 9.8;
+
+7.      Assignment Operators in JS:
+            e.g.,
+                age = age + 1;
+                    age += 1;
+                age = age - 1;
+                    age -= 1;
+                age = age * 1;
+                    age *= 1;
+
+8.      Unary Operators in JS:
+            e.g., age++ and age--
+                and, 
+                  ++age and --age
+
+            ->  Pre-increment or Pre-decrement: Change then use.
+                    let age= 10;
+                    let newAge= ++age;  //updates age= 11 and then newAge=11
+
+            ->  Post-increment or Post-decrement: Use then change.
+                    let age= 10;
+                    let newAge= age++;  //updates newAge= 10 and then age=11 
+
+9.      Identifier Rules: 
+            All Javascript variables must be identified with unique names (identifiers.)
+                ->  Names can contain letters, digits, underscores, and dollar signs(no space.)
+                ->  Names must begin with a letter.
+                ->  Names can also begin with $ and _.
+                ->  Names are case-sensitive (y and Y are different variables.)
+                ->  Reserved words (like JavaScript keywords) cannot be used as Names.
+
+            Way of writing identifiers in JS is camelCase.
+
+10.     Boolean in JS*
+
+11.     WHAT IS TYPESCRIPT?
+            ->  Static Typed, where JS is dynamic typed.
+            ->  Designed by Mircrosoft.
+
+12.     String in JS:
+            ->  Strings are text or sequence of characters.
+                    letname = "Tony Stark";
+                    let role= "ironman";
+                    let char= "a";
+                    let num= "23";
+                    let empty= "";
+
+            -> Concatenation
+                    "tony" + 1 will return "tony1" in js.
+
 
