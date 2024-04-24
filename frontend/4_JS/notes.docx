@@ -1,0 +1,56 @@
+Javascript Programming Language Notes
+
+CHAPTER 1
+-----------------------------------------------------------------------------------------------------
+1.      Data Types in JS:
+            ->  Primitive Types:
+                    i.      Number
+                    ii.     Boolean
+                    iii.    String
+                    iv.     Undefined
+                    v.      Null
+                    vi.     Bignit (less frequently used)
+                    vii.    Symbol (less frequently used)
+
+            ->  typeof a:   returns datatype of the variable.
+
+            i.      Numbers:
+                    ->      Positive (14) and Negative (-4)
+                    ->      Integers (45, -50)
+                    ->      Floating numbers- with decimal (4.6, -8.9)
+
+2.      Operations in JS:
+            ->  Modulo (remainder operator)
+            ->  Exponentiation (power operator)
+
+3.      NaN in JS:
+            ->  The NaN global property is a value representing Not-A-Number.
+                e.g.,   0/0, NaN-1, NaN*1, NaN + NaN
+
+4.      Operator Precedence:
+            ->  This is the general order of solving an expression.
+                (), **, * , / , % , + , -
+
+5.      'let' keyword:
+            ->  Syntax of declaring variables.
+            ->  Used only once while declaring the variable.
+            ->  The value of the variables declared as 'let' can be changed later. 
+                e.g., let age = 23;
+                      age = age + 1;
+
+                      let cgpa;
+                      cgpa = 8.9
+
+                      let num1 = 1;
+                      let num2 = 2;
+                      let sum = num1 + num2;
+
+6.      'const' keyword:
+            ->  Values of constants can't be changed with re-assignment & they can't be re-declared.
+            ->  The value of the variables declared as 'const' can not be changed later.
+                e.g., const year= 2025;
+                      const pi= 3.14;
+                      year= 2026; //Error
+                      year= year + 1; //Error
+                      const g= 9.8;
+
