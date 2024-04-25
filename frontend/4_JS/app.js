@@ -1,14 +1,16 @@
-console.log("Hello World!");
-console.log("Ritika Upadhyay");
+let color= "red";
 
-let a=2;
-let b=5;
+if(color=="red"){
+    console.log("STOP!");
+    let color = "orange";
+}
 
-console.log("The sum is: ", a+b);
+if(color=="orange"){
+    console.log("GET READY!");
+    let color = "yellow";
+}
 
-let pencilPrice = 10;
-let eraserPrice = 5;
-
-let output = "The total price is: " + (pencilPrice + eraserPrice) + " Rupees." ;
-
-console.log(output);
+if(color == "yellow"){
+    console.log("GO!");
+    let color= "red";
+}
