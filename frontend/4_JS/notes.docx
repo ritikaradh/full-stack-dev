@@ -119,3 +119,19 @@ CHAPTER 1
                     "tony" + 1 will return "tony1" in js.
 
 
+CHAPTER 2
+------------------------------------------------------------------------------------------------------------------------
+
+1.      console.log():  
+            To write (log) a message on the console.
+            Used in Javascript files.
+            Basically, console.log() is a way to link our javascript file with the browser's console, because our js file and browser are located in different places.
+
+            ->  console.log("Apna College");
+            ->  console.log(1234);
+            ->  console.log(2+2);
+            ->  console.log("Apna", "College", 1234);
+
+2.      Linking JS File:
+            <script src="app.js"></script>
+
