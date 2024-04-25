@@ -134,4 +134,43 @@ CHAPTER 2
 
 2.      Linking JS File:
             <script src="app.js"></script>
+            
+            ->  Generally, included in the body tag of the html window instead of the head tag.
+
+3.      Template Literals:
+            They are used to add embedded expressions in a string.
+
+            let a= 5;
+            let b= 10;
+
+            console.log(`Your pay ${a+b} rupees.`);    //note: back ticks are used.
+
+4.      Operators in JS:
+            i.      Arithmetic (+, -, /, %, **)
+            ii.     Unary (++, --)
+            iii.    Assignment (=, +=, -=, *=, /=, % etc.)
+            iv.     Comparison (>, >=, <, <=, ==, !=, ===)
+            v.      Logical
+
+            ->  Note:   '==' compares value and not type, while '===' compares  type and value.
+                            e.g., "123" == 123  will return true.
+                                0 == " " will return true.
+                                0 == false will return true.
+                                null == undefined will return true.
+
+                                While, 
+                                    "123" === 123 will return false.
+                                    "1" === 1 will return false.
+                                    " " === false will return false.
+                                    null === undefineed will return false.
+
+5.      Comparison for Non-Numbers:
+            ->  'a' > 'A' returns true.
+            ->  'a' > 'b' returns false.
+            ->  'b' < 'c' returns true.
+            ->  'B' < 'C' returns true.
+            ->  '*' < '&' returns false. 
+
+
+
 
