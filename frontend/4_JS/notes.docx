@@ -171,6 +171,11 @@ CHAPTER 2
             ->  'B' < 'C' returns true.
             ->  '*' < '&' returns false. 
 
+6.      Conditional Statements:
+            ->  if-else
+            ->  nested if-else
+            ->  switch
+
 
 
 
