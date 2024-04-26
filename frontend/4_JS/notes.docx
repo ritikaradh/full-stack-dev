@@ -176,6 +176,21 @@ CHAPTER 2
             ->  nested if-else
             ->  switch
 
+7.      Truthy and Falsy:
+            Everything in JS is true or false (in boolean context.)
+
+            This doesn't mean their value itself is false or true, but they are treated as false or true if taken in boolean context.
+
+            ->  Falsy Values:
+                    false, 0, -0, On (Bignit value), ""(empty string), null, undefined, NaN.
+
+            ->  Truthy Values:
+                    Everything else.
+
+8.      Switch Statement:
+            Used when we have some fixed values that we need to compare to.
+
+
 
 
 
