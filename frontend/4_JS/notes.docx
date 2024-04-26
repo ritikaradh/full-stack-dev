@@ -150,7 +150,7 @@ CHAPTER 2
             ii.     Unary (++, --)
             iii.    Assignment (=, +=, -=, *=, /=, % etc.)
             iv.     Comparison (>, >=, <, <=, ==, !=, ===)
-            v.      Logical
+            v.      Logical (&&, ||, !)
 
             ->  Note:   '==' compares value and not type, while '===' compares  type and value.
                             e.g., "123" == 123  will return true.
