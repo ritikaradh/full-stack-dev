@@ -172,7 +172,7 @@ CHAPTER 2
             ->  '*' < '&' returns false. 
 
 6.      Conditional Statements:
-            ->  if-else
+            ->  if-else: if, else-if, else
             ->  nested if-else
             ->  switch
 
