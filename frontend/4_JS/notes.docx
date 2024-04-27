@@ -190,6 +190,21 @@ CHAPTER 2
 8.      Switch Statement:
             Used when we have some fixed values that we need to compare to.
 
+9.      Alert & Prompt:
+            Alert displays an alert message on the page.
+            
+            ->  alert("something went wrong!);
+
+            Prompt displays a dialog box that asks users for some input.
+            
+            ->  prompt("please enter your roll no.");
+
+            Alert and Prompts pops out on the website.
+
+10.     Error and Warning:
+            ->  console.error("Something went wrong! ");
+            ->  console.warn("Check your username");
+
 
 
 
