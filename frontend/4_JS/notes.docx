@@ -1,7 +1,7 @@
 Javascript Programming Language Notes
 
 CHAPTER 1
------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 1.      Data Types in JS:
             ->  Primitive Types:
                     i.      Number
@@ -120,7 +120,7 @@ CHAPTER 1
 
 
 CHAPTER 2
-------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 1.      console.log():  
             To write (log) a message on the console.
@@ -207,7 +207,7 @@ CHAPTER 2
 
 
 CHAPTER 3
-------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------
 1.      Strings:
             Any class's instance has two things:
                 ->  Properties
@@ -239,6 +239,46 @@ CHAPTER 3
                 vii.    repeat:     Returns a string with the number of copies of a string.
                             ->  let str = "Mango";
                             ->  str.repeat(3);      //returns 'MangoMangoMango'
+
+2.      Array (Data Structure):
+            ->  Heterogeneous arrays possible in JS.
+            ->  Nested Arrays.
+            ->  Arrays are mutable in C++.
+            
+            ->  Array Methods:
+                    i.      push:       add to end.
+                    ii.     pop:        delete from end and returns to it.
+                    iii.    unshift:    add to start and return index.
+                    iv.     shift:      delete from start and returns the element.
+                    v.      indexOf:    returns index of array element, if not found returns -1.
+                    vi.     includes:   search for a value and returns true/false.
+                    vii.    concat:     merge 2 arrays.
+                    viii.   reverse:    reverse an array.
+                    ix.     slice:      copies a portion of an array.
+                                            e.g., let colors = ["red", "yellow", "blue", "orange", "pink", "white"];
+                                                    ->  colors.slice() 
+                                                            returns ["red", "yellow", "blue", "orange", "pink", "white"]
+                                                    ->  colors.slice(2)
+                                                            returns ["blue", "orange", "pink", "white"]
+                                                    ->  colors.slice(2,3)
+                                                            returns["blue"]
+                                                    ->  colors.slice(-2)
+                                                            returns["pink", "white"]
+
+                    x.      splice:     removes | replaces | add elements in place.
+                                        IMP. SPLICE MAKES CHANGES IN THE ORIGINAL ARRAY ITSELF.
+                                            e.g., let colors = ["red", "yellow", "blue", "orange", "pink", "white"];
+                                                    ->  colors.splice(4);
+                                                            colors: ["red", "yellow", "blue", "orange"]
+                                                    ->  colors.splice(0,1);
+                                                            colors: ["yellow", "blue", "orange"]
+                                                    ->  colors.splice(0, 1, "black", "grey");
+                                                            colors: ["black", "grey", "blue", "orange"]
+
+                    xi.     sort:       sorts an array. 
+                                            Note: We do not use sort method for sorting an array which contains numbers, because by default sort method sorts the elements of an array by converting them first into strings or you can say UTF8 characters. So based on this UTF8 characters then the elements get sorted which might result to unwanted order of sorting of elements.     
+
+            
 
 
 
