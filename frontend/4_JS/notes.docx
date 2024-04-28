@@ -206,6 +206,43 @@ CHAPTER 2
             ->  console.warn("Check your username");
 
 
+CHAPTER 3
+------------------------------------------------------------------------------------------------------------------
+1.      Strings:
+            Any class's instance has two things:
+                ->  Properties
+                ->  Methods
+                        ->  Format: stringName.method()
+
+            Strings are immutable in JS.
+                ->  No changes can be made to strings.
+                ->  Whenever we do try to make a change, a new string is created and old one remains same.
+            
+            Method chaining:
+                ->  Using one method after another. Order of execution will be left to right.
+                        e.g., str.toUpperCase().trim()
+
+            String methods:
+                i.      str.trim(): Trims whitespaces from both ends of string and returns a new one.
+                ii.     str.toUpperCase()
+                iii.    str.toLowerCase()
+                iv.     str.indexOf(arg):   Returns the first index of occurence of some value in string. Or gives -1 if not found.
+                v.      str.slice():    Returns a part of the original string as a new string.
+                            ->  let str = "I Love Coding";
+                            ->  str.slice(5) gives "Coding"
+                            ->  str.slice(1,4) gives "love"
+                            ->  str.slice(-num) gives str.slice(length-num)
+                vi.     replace:    Searches the first occurence of a value in the string and returns a new string with the value replaced.
+                            ->  let str = "ILoveCoding";
+                            ->  str.replace("love", "do");    //returns 'IdoCoding'
+                            ->  str.replace("o", "x");        //returns 'IlxveCoding'
+                vii.    repeat:     Returns a string with the number of copies of a string.
+                            ->  let str = "Mango";
+                            ->  str.repeat(3);      //returns 'MangoMangoMango'
+
+
+
+
 
 
 
