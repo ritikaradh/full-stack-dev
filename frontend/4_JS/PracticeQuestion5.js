@@ -16,3 +16,6 @@ let namee = "ApnaCollege";
 console.log(namee.slice(4,9));
 console.log(namee.indexOf("na"));
 console.log(namee.replace("Apna", "Our"));
+
+//3. Seperate the college part in above string and replace 'l' with 't' in it.
+console.log(namee.slice("College").replace("l", "t"));
