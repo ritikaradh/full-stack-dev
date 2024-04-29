@@ -244,7 +244,13 @@ CHAPTER 3
             ->  Heterogeneous arrays possible in JS.
             ->  Nested Arrays.
             ->  Arrays are mutable in C++.
-            
+            ->  Array References:
+                        ->      [1] == [1] returns false
+                        ->      [1] === [1] returns false
+                        ->      Reason: reference in memory i.e., address in memory.
+                        ->      let arr = ['a', 'b']
+                        ->      let arrCopy = arr;
+                        ->      arr == arrCopy returns true.
             ->  Array Methods:
                     i.      push:       add to end.
                     ii.     pop:        delete from end and returns to it.
@@ -276,9 +282,12 @@ CHAPTER 3
                                                             colors: ["black", "grey", "blue", "orange"]
 
                     xi.     sort:       sorts an array. 
-                                            Note: We do not use sort method for sorting an array which contains numbers, because by default sort method sorts the elements of an array by converting them first into strings or you can say UTF8 characters. So based on this UTF8 characters then the elements get sorted which might result to unwanted order of sorting of elements.     
-
-            
+                                            Note: We do not use sort method for sorting an array which contains numbers, because by default sort method sorts the elements of an array by converting them first into strings or you can say UTF8 characters. So based on this UTF8 characters then the elements get sorted which might result to unwanted order of sorting of elements.
+            ->  Constant Arrays:
+                    ->  Syntax: const arr= [1,2,3,4];
+                    ->  Operations are still possible in this arr.
+                    ->  Changing the address reference of const arr is not possible.
+                
 
 
 
