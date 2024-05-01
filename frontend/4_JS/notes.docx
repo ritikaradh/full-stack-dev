@@ -287,8 +287,47 @@ CHAPTER 3
                     ->  Syntax: const arr= [1,2,3,4];
                     ->  Operations are still possible in this arr.
                     ->  Changing the address reference of const arr is not possible.
-                
 
+
+CHAPTER 4
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------                
+
+
+1.      Loops in JS:
+                i.      for loop
+                ii.     while loop
+
+2.      Loops with Arrays:
+                ->      let fruits = ["mango", "apple", "banana", "litchi", "orange"];
+                ->      for (let i = 0; i < fruits.length; i++){
+                                console.log(i, fruits[i]);
+                        }
+
+3.      Loops with Arrays:
+                Nested loops with Nested Arrays.
+
+                ->      let heroes = [["ironman", "spiderman", "thor"], ["superman", "wonder woman", "flash"]];
+                ->      console.log(`List #${i}`);
+                ->      for (let i=0; i < heroes.length; i++){
+                                console.log(heroes[i][j]);
+                        }
+
+4.      for-of loop in JS:
+                Syntax:
+                        for(element of collection){
+                                //do something
+                        }
+
+                ->      let fruits = ["mango", "apple", "banana", "litchi", "orange"];
+                        for (fruit of fruits) {
+                                console.log(fruit);
+                        }
+
+                ->      for(char of "apnacollege"){
+                                console.log(char);
+                        }
+
+                ->      for-of loop for nested arrays.
 
 
 
