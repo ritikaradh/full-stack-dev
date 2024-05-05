@@ -329,6 +329,75 @@ CHAPTER 4
 
                 ->      for-of loop for nested arrays.
 
+CHAPTER 5
+------------------------------------------------------------------------------------------
+
+
+1.      JS Object Literals
+
+        ->      Used to store keyed collections and complex entities.
+        ->      property =>     (key,value) pair
+        ->      Objects are a collection of properties.
+        ->      post request
+        ->      get request
+        ->      get values:
+                        ->      JS automatically converts objects keys to strings.
+                        ->      Even if we made the number as a key, the number will be converted to string.
+        ->      Add/ Update Value:
+                ->      Change the city to "Mumbai"
+                ->      Add a new property, gender: "Female"
+                ->      Change the marks to "A".
+                ->      Deletion:       delete post.date;
+        
+        ->      Object of Objects:
+                ->      Syntax:
+                                const classInfo = {
+                                        aman: {
+                                                grade:  "A+",
+                                                city:   "Delhi",
+                                        },
+                                        shradha: {
+                                                grade:  "A",
+                                                city:   "Pune",
+                                        },
+                                        karan: {
+                                                grade:  "B+",
+                                                city:   "Mumbai",
+                                        },
+                                }
+
+                ->      Chain rule for access.
+
+        ->      Array of objects:
+                ->      Syntax:
+                                const classInfo = [
+                                        aman: {
+                                                grade:  "A+",
+                                                city:   "Delhi",
+                                        },
+                                        shradha: {
+                                                grade:  "A",
+                                                city:   "Pune",
+                                        },
+                                        kar an: {
+                                                grade:  "B+",
+                                                city:   "Mumbai",
+                                        },
+                                ]
+
+2.      Math Object:
+        ->      Properties:
+                        i.      Math.PI
+                        ii.     Math.E
+        ->      Methods:
+                        i.      Math.abs(n)
+                        ii.     Math.obj(a,b)
+                        iii.    Math.pow(n)
+                        iv.     Math.floor(n):  returns nearest smallest integer value.
+                        v.      Math.ceil(n):   returns nearest largest integer value.
+                        vi.     Math.random():  returns a random value btw 0 to 1.
+                                
+
 
 
 
