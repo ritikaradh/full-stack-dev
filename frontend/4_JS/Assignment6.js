@@ -64,9 +64,9 @@ function countVowels(str){
             count += 1;
         }
     }
-
     return count;
 }
+
 let testString = "Ritika Upadhyay";
 console.log(countVowels(testString));
 
@@ -74,7 +74,7 @@ console.log(countVowels(testString));
 //5.    Write a JS function to generate a random number within a range (start, end).
 
 function generateRandomNumber(start, end){
-    randomNumber = Math.floor(Math.random() * (end - start)) + (end - start + 1);
+    randomNumber = Math.floor(Math.random() * (end - start)) + start;
     return randomNumber;
 }
 
