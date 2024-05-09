@@ -489,7 +489,66 @@ CHAPTER 6
                                 }
                         };
         
-                                
+
+CHAPTER 7
+----------------------------------------------------------------------------------------------------------
+
+
+1.      'this' keyword:
+        ->      'this' keyword refers to an object that is executing the current piece of code.
+
+2.      try & catch:
+        ->      The try statement allows us to define a block of code to be tested for errors while it is being executed.
+        ->      The catch statement allows us to define a block of code to be executed, if an error occurs in the try block.
+        ->      Example:
+                        try{
+                                console.log(a);
+                        }
+                        catch{
+                                console.log("variable a doesn't exist)
+                        }
+
+3.      Arrow Functions
+        ->      Syntax:
+                        const func = (arg1, arg2...) => {function definition}
+                        const func = (arg1, arg2, ...) => (value)
+        ->      Example:
+                        const sum = (a, b) => {
+                                console.log(a+b)
+                        }
+        ->      Implicit return: we can remove the 'return' keyword to return an element from an arrow function, the arrow funnction by default will return the object if anything else is not written in its block.
+                ->      e.g., const mul = (a, b) => {
+                                        a * b;  //arrow func will by default implicitly return this expression
+                                }
+
+4.      Set Timeout
+        ->      Syntax:
+                        setTimeout(function, timeout)
+        ->      Example:
+                        console.log("hi there");
+
+                        setTimeout( () => {
+                                console.log("Ritika Upadhyay");
+                        }, 4000);
+
+                        console.log("pardon!");
+        ->      setTimeout takes the time in milliseconds i.e., 4s = 4000ms
+
+5.      Callback
+        ->      Callback is any function which can be or which is passed as an arguement in any other function i.e., in higher order function.
+
+6.      Set Interval
+        ->      setInterval (function, timeout)
+        ->      Syntax:
+                        setInterval( () => {
+                                console.log("Apna College");
+                        }, 200);
+
+                        clearInterval(id);
+
+7.      'this' keyword with Arrow function**:
+        ->      For arrow functions, the scope of 'this' keyword is lexical scope.
+        ->      For normal functions, the scope of 'this' keyword is its calling object.
 
 
 
