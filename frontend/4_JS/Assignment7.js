@@ -23,3 +23,16 @@ const isEven = num =>{
     }
 }
 console.log(isEven(10));
+
+
+//3.    What is the output of the following code:
+const object = {
+    message:    "Hello, world!",
+
+    logMessage() {
+        console.log(this.message);
+    }
+};
+
+setTimeout(object.logMessage, 3000);
+setTimeout(object.logMessage(), 1000);
