@@ -21,3 +21,27 @@ function getMinNum(arr){
 }
 
 getMinNum([5,23,12,54,2,5,8]);
+
+
+//3.    Implementation of destructuring of object literals
+
+let classroom = {
+    roll123 : "Tisha",
+    roll124  : "Mitali",
+    roll125 : "Taniya",
+    roll126 : "Adi",
+    roll127 : "Anshu",
+}
+
+let {roll124, roll125} = classroom;
+console.log(roll124, roll125);
+
+let {roll124: topper, roll126: second} = classroom;
+console.log(topper, second);
+
+let {roll120 = "Ritika"} = classroom;
+console.log(classroom);
+
+let {roll123: roll121 = "Ritika"} = classroom;
+console.log(classroom);
+
