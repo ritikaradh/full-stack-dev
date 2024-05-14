@@ -550,6 +550,40 @@ CHAPTER 7
         ->      For arrow functions, the scope of 'this' keyword is lexical scope.
         ->      For normal functions, the scope of 'this' keyword is its calling object.
 
+CHAPTER 8
+----------------------------------------------------------------------------------------------------------
+
+
+1.      Array Methods:
+                i.      forEach
+                        ->      Syntax: arr.forEach(some function definition or name);
+                        ->      Returns elements of the array in iterative lines (similar to for-of loop)
+
+                ii.     map
+                        ->      Syntax: let newArr = arr.map(some function definition or name);
+                        ->      Performs the operations defined in the functional block on each of the elements of the Array
+                        ->      Stores the operated elements into a new array.
+
+                iii.    filter
+                        ->      Syntax: let newArr = arr.filter((el) => (el <= 10));
+                        ->      Operates on an array, takes each element of the array and compares it with a given condition.
+                        ->      If the element passes the condition (returns true) then it stores it into the new array.
+
+                iv.     some
+                        ->      Syntax: let newArr = arr.some(el => (el % 10 == 0));
+                        ->      Similar to every.
+                        ->      Returns true if atleast one element of the array passes the condition.
+
+                v.      every
+                        ->      Syntax: arr.every((el) => (el <= 10));
+                        ->      Operates on an array, returns true or false if every element of the array returns true or false for the given condition.
+
+                vi.     reduce
+                        ->      Syntax: arr.reduce( reducer function with 2 variables for (accumulator, element) );
+        ->Note: The above are higher order function which takes functions as an arguement i.e., it takes callback as an arguement.
+
+
+
 
 
 
