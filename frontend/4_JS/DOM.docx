@@ -1,0 +1,82 @@
+JS Chapter 9: DOMS (Document Object Model)
+---------------------------------------------------------------------
+
+1.      Introduction:
+        ->      The DOM represents a document with a logical tree.
+        ->      It allows us to manipulate/ change webpage content (HTML elements.)
+        ->      HTML tags when integrated with JS, converted into a document tree-like structure containing nodes as tags.
+        ->      Window and document are the in-built object in JS.
+        ->      console.dir is used to view the properties of #document object in the console window.
+
+2.      Manipulating HTML and CSS using JS:
+        ->      Select tags or elements
+        ->      Changes/ manipulation
+
+3.      #document property
+        i.      all
+
+4.      Selecting HTML and CSS tags using JS:
+        i.      getElementById(id): returns the element as an object or null (if not found)
+        ii.     getElementByClassName(class):   returns the elements as an HTML Collection or empty collection (if not found)
+        iii.    getElementsByTagName:   Returns the elements as an HTML Collection or empty collection (if not found.)
+        iv.     Query Selectors:        Allows us to use any CSS selector, returns the first element with the query.
+                ->      E.g.,   document.querySelector('p');    //Selects first p element
+                                document.querySelector('#myId') //Selects first element with Id = myId
+                                document.querySelector('.myClass')      //Selects first element with class= myClass
+        v.      Query Selector All:
+                ->      E.g.,
+                                document.querySelectorAll('p')  //Selects all p elements
+
+5.      Manipulating HTML and CSS tags using JS:
+        i.      innerText:      
+                ->      Shows the visible text contained in a node.
+                ->      Shows the visible text in the window.
+        ii.     textContent:    
+                ->      Shows all the full text.
+                ->      Shows the text (in the same format) contained in the html file.
+        iii.    innerHTML:      
+                ->      Shows the full markup.
+
+6.      Manipulating Attributes:
+        i.      obj.getAttribute( attr );
+        ii.     obj.setAttribute( attr, val );
+                ->      less frequently used.
+                ->      sets only one attr at a time
+
+7.      Manipulating style:
+        i.      style property i.e., obj.style
+                ->      'background-image' nomenclature in CSS changes to 'backgroundImage' i.e., camelCase nomenclature in JS.
+                ->      used to manipulate inline-styling.
+                ->      less frequently used.
+                ->      cannot access styles defined inside a css file.
+
+        ii.     using classList i.e., obj.classList
+                ->      obj.classList methods are discussed below-
+                                a.      obj.classList.add() to add new classes
+                                b.      obj.classList.remove() to remove classes
+                                c.      obj.classList.contains to check if class exists.
+                                d.      obj.classList.toggle() to toggle between add and remove.
+                                        ->when added something returns 'true', when removes something returns 'false'.  
+
+8.      Navigation properties:
+        ->      obj.parentElement
+        ->      obj.children
+        ->      obj.previousElementSibling / nextElementSibling
+
+9.      Adding Elements:
+        ->      used to add html tags in the document.
+        ->      Step1:  create an html element (i.e., html tag).
+                        e.g., obj = document.createElement('p');
+        ->      Step2:  after creating an html element we need to add it also inside the document.
+                        ->      following append methods are used for this purpose
+                                i.      obj1.appendChild(obj);
+                                ii.     obj1.append(element);   //adds to the last; string, text
+                                iii.    prepend( element );     //adds to the first; rest same as append method.
+                                iv.     insertAdjacent( where, element);        //refer to mdn.
+
+10.     Removing Elements:      
+        i.      obj1.removeChild( obj );
+        ii.     obj.remove();
+
+
+
