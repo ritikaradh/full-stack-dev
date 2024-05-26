@@ -41,3 +41,11 @@ let para = document.createElement('p');
 para.innerHTML = "Apna College <b>Delta</b> Practice";
 
 body.appendChild(para);
+
+
+//Keyboard Events
+input = document.querySelector('input');
+input.addEventListener("keydown", function(){
+    console.log("key was pressed.");
+})
+

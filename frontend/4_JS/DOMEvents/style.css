@@ -1,0 +1,13 @@
+.box{
+    height: 10em;
+    width: 30em;
+    border: 0.1em solid black;
+    text-align: center;
+    padding: 1em;
+    margin: 2rem auto;
+}
+
+body{
+    text-align: center;
+}
+
