@@ -50,9 +50,17 @@ btn.addEventListener("click", function(){
 
 const input = document.createElement('input');
 input.placeholder = "enter your name";
+input.type = "name";
 
 body.prepend(input);
 
 let head2 = document.createElement('h2');
-head2.textContent = "Heading 2 for Input Element";
+div.appendChild(head2);
+
+//adding event listener
+input.addEventListener("keydown", changeHead);
+function changeHead(){
+    head2.innerText = input.value;
+}
+
 
