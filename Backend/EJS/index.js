@@ -11,6 +11,8 @@ app.set("view engine", "ejs");
 
 //making view  available at the backend not only for EJS directory
 app.set("views", path.join(__dirname, "/views"));
+
+//subtemplating
 app.use(express.static(path.join(__dirname, "public/javascript")));
 app.use(express.static(path.join(__dirname, "public/css")))
 

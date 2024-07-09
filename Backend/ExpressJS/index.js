@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const path = require("path");
 
 // console.dir(app);
 
@@ -48,4 +49,20 @@ app.get("/:username/:id", (req, res) =>{
 app.get("/search", (req, res) => {
     console.log(req.query);
     res.send("No results.");
+});
+
+
+//Understanding POST requests:
+app.set("views", path.join(__dirname, "/views"));
+
+app.use(express.urlencoded({extended: true}));
+app.use(express.json());
+
+app.get("/formsubmission", (req,res)=> {
+    res.render("form.ejs");
+});
+
+app.post("/formsubmission", (req,res) => {
+    let { username , pswd} = req.body; 
+    res.send(`Hello ${username.toUpperCase()}`);
 });
