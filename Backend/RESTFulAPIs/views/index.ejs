@@ -12,10 +12,17 @@
     </head>
 
     <main>
-        <%for(let post of posts) {%>
+        <%for(let post of posts){%>
             <div>
                 <h3><%=post.username;%></h3>
                 <p><%=post.status;%></p>
+                <button id="edit-post"><a href="http://localhost:8080/posts/<%=post.id%>/edit">Edit</a></button>
+
+                <form id="delete-post" method="post" action="http://localhost:8080/posts/<%=post.id%>?_method=DELETE">
+                    <button>Delete</button>
+                </form>
+                
+                <button id="see-in-detail"><a href="http://localhost:8080/posts/<%=post.id%>">Details</a></button>
             </div>
         <%}%>
     </main>
