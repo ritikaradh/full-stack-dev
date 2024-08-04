@@ -47,7 +47,6 @@ async function main(){
 //         console.log(err);
 //     });
 
-
 //index route
 app.get("/chats", async(req,res,next)=>{
     try{
@@ -85,8 +84,14 @@ app.post("/chats", async(req,res, next)=>{
     }    
 });
 
+function asyncWrap(fn) {
+    return function (req, res, next) {
+        fn (req, res, next).catch((err)=>next(err));
+    };
+}
+
 //New- Show Route
-app.get("/chats/:id", async(req,res,next)=>{
+app.get("/chats/:id", asyncWrap(async(req,res,next)=>{
     try{
         let { id } = req.params;
         let chat = await Chat.findById(id);
@@ -99,7 +104,7 @@ app.get("/chats/:id", async(req,res,next)=>{
     }catch(err){
         next(err);
     }
-});
+}));
 
 //Edit route
 app.get("/chats/:id/edit", async(req,res,next)=>{
